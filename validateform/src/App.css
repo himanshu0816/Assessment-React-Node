@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMV3ocUcPTSTkugNWKLEObJ9CyEeJhJkF_kdh_bAmvZtIkE8Almjrr4GuRDB23lMVenM&usqp=CAU");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+input#exampleCheck1 {
+  float: none;
+}
