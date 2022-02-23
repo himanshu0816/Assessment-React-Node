@@ -4,18 +4,18 @@ import { validateEmail } from "./validate";
 
 
 const App = () => {
-  const [email, setEmail] =useState('')
-  const [number, setNumber] =useState('')
+  const [email, setEmail] = useState('')
+  const [number, setNumber] = useState('')
 
-  const onSubmitClick=(e) => {
-    if(!validateEmail(email)) {
+  const onSubmitClick = (e) => {
+    if (!validateEmail(email)) {
       e.preventDefault()
-      alert("please Enter valid Email")
+      alert("please Enter valid Name")
       return
     }
-    if(number.length < 10){
+    if (number.length < 10) {
       e.preventDefault()
-      alert("eneter valid password")
+      alert("eneter valid Number")
     }
   }
   return (
@@ -35,7 +35,7 @@ const App = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            
+
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">
@@ -50,7 +50,7 @@ const App = () => {
               onChange={(e) => setNumber(e.target.value)}
             />
           </div>
-          
+
           <button type="submit" class="btn btn-success">
             Submit
           </button>
